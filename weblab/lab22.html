@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee CRUD</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px;
+    }
+    th, td {
+      border: 1px solid gray;
+      padding: 10px;
+    }
+    th {
+      background-color: #ddd;
+    }
+    button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Employee Records</h2>
+
+  <form>
+    <input type="text" placeholder="ID">
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Department">
+    <button>Add</button>
+  </form>
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Aryan</td>
+      <td>IT</td>
+      <td>
+        <button>Edit</button>
+        <button>Delete</button>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

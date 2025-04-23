@@ -1,0 +1,31 @@
+<!-- birthday_card.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday Card</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #card {
+      display: none;
+      padding: 20px;
+      border: 2px dashed pink;
+      width: 250px;
+      background-color: lightyellow;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button id="showCard">Open Card</button>
+  <div id="card">
+    <h2>🎉 Happy Birthday! 🎉</h2>
+    <p>Wishing you a joyful and amazing year ahead!</p>
+  </div>
+
+  <script>
+    $("#showCard").click(function () {
+      $("#card").fadeIn();
+    });
+  </script>
+</body>
+</html>

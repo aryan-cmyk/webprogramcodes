@@ -1,0 +1,91 @@
+<!-- table_image_move.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Move Table & Image</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #wrapper {
+      position: absolute;
+      right: 10%;
+    }
+    table {
+      border-collapse: collapse;
+      position: absolute;
+    }
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(odd) {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <button id="moveBtn">Move Table & Image</button>
+  <div id="wrapper">
+    <table>
+      <tr><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>4</td><td>5</td><td>6</td></tr>
+      <tr><td>7</td><td>8</td><td>9</td></tr>
+    </table>
+    <br>
+    <img src="https://via.placeholder.com/100" />
+  </div>
+
+  <script>
+    $("#moveBtn").click(function () {
+      $("#wrapper").animate({ left: "50%" }, 2000);
+    });
+  </script>
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #wrapper {
+      position: relative;
+      left: 100%;
+    }
+    table {
+      position: absolute;
+      right:0%;
+    }
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(odd) {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+  <table>
+    <tr><td>1</td><td>2</td></tr>
+  </table>
+  <img src=""></div>
+  <button  id="button" >click</button>
+  <script>
+   $("#button").click(function()
+  {
+    $("#wrapper").animate({left:"0"},2000);
+  });
+  </script>
+</body>
+</html>-->
